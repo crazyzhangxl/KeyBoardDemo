@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Keyboard android:keyWidth="25.0%p" android:keyHeight="9.599996%p" android:horizontalGap="0.0px" android:verticalGap="0.0px"
+    xmlns:android="http://schemas.android.com/apk/res/android">        
+    <Row>                
+        <Key android:codes="49" android:keyLabel="1" />                
+        <Key android:codes="50" android:keyLabel="2" />                
+        <Key android:codes="51" android:keyLabel="3" />                
+        <Key android:keyHeight="19.300003%p" android:codes="-5" android:keyEdgeFlags="right" android:isRepeatable="true"
+            android:keyIcon="@drawable/keyboard_delete_icon" />        
+    </Row>        
+    <Row>                
+        <Key android:codes="52" android:keyLabel="4" />                
+        <Key android:codes="53" android:keyLabel="5" />                
+        <Key android:codes="54" android:keyLabel="6" />                
+               
+    </Row>        
+    <Row>                
+        <Key android:codes="55" android:keyLabel="7" />                
+        <Key android:codes="56" android:keyLabel="8" />                
+        <Key android:codes="57" android:keyLabel="9" />                
+        <Key android:keyHeight="19.500003%p" android:codes="-4" android:keyEdgeFlags="right" android:keyLabel="确定" />      
+        <!--19.200003%p -->
+    </Row>        
+    <Row>                
+        <Key android:codes="46" android:keyLabel="." />              
+        <Key android:codes="48" android:keyLabel="0" />                
+        <Key android:codes="-3" android:keyIcon="@drawable/keyboard_fold_icon" />        
+    </Row>
+</Keyboard>

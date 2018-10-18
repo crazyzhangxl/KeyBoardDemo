@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp">
+            <EditText
+                android:layout_centerInParent="true"
+                android:textSize="30sp"
+                android:id="@+id/editText"
+                android:background="@null"
+                android:maxLength="11"
+                android:lines="1"
+                android:inputType="phone"
+                android:longClickable="false"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+        <com.example.apple.keyboarddemo.CustomNumKeyboardView
+            android:id="@+id/keyboardView"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:keyBackground="@drawable/keyboard_btn_bg"
+            android:keyTextSize="24sp"
+            android:keyTextColor="#ff000000"
+            android:keyPreviewOffset="0dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+</RelativeLayout>
