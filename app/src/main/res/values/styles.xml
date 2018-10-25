@@ -8,4 +8,14 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="topic" parent="AppTheme">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="BottomSheetEdit" parent="Theme.Design.Light.BottomSheetDialog">
+        <item name="android:windowIsFloating">false</item> <!--不浮现在活动上-->
+        <item name="android:windowSoftInputMode">adjustResize</item>
+    </style>
+
 </resources>

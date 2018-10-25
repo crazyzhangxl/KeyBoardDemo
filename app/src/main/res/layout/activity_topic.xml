@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".topic.TopicActivity">
+    <TextView
+        android:text="主题点评"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:gravity="center_vertical"
+        android:paddingLeft="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="45dp" />
+    <View style="@style/h_line" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <!-- 这里给我的启示是 用权重而不是使用aliginParentBottom 可以规避掉软键盘往上顶的问题-->
+        <LinearLayout
+            android:id="@+id/ll_comment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:orientation="vertical">
+            <FrameLayout
+                android:id="@+id/lay_container"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@color/white">
+                <TextView
+                    android:layout_marginLeft="45dp"
+                    android:layout_marginTop="200dp"
+                    android:text="这里替换为具体的内容即可"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </FrameLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:layout_gravity="bottom"
+                android:background="@color/white"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                tools:ignore="KeyboardInaccessibleWidget">
+                <View
+                    style="@style/h_line"
+                    android:background="#d4d4d4" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/comment_show"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/ic_bg_edit"
+                        android:orientation="horizontal"
+                        tools:ignore="RtlHardcoded">
+
+                        <TextView
+                            android:id="@+id/tv_comment"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:hint="发表评论"
+                            android:paddingLeft="8dp"
+                            tools:ignore="HardcodedText,RtlHardcoded,RtlSymmetry" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </FrameLayout>
+
+</LinearLayout>

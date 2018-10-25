@@ -1,4 +1,4 @@
-package com.example.apple.keyboarddemo;
+package com.example.apple.keyboarddemo.keyboard_num;
 
 import android.content.Context;
 import android.graphics.Canvas;
@@ -10,17 +10,21 @@ import android.inputmethodservice.Keyboard;
 import android.inputmethodservice.KeyboardView;
 import android.util.AttributeSet;
 
+import com.example.apple.keyboarddemo.R;
+
 import java.util.Iterator;
 
 /**
  * @author crazyZhangxl on 2018/10/17.
- * Describe:
+ * Describe: 自定义基本使用技巧 ------ 有待强化一些技能哦哦
  */
 public class CustomNumKeyboardView
         extends KeyboardView
 {
     private Context mContext;
     private Keyboard mKeyboard;
+    private boolean mConFirmBtnEnabled = true;
+
 
     public CustomNumKeyboardView(Context paramContext, AttributeSet paramAttributeSet)
     {
@@ -108,8 +112,13 @@ public class CustomNumKeyboardView
             } else if (localKey.codes[0] == -4)
             {
                 // 绘制确认键
-                drawKeyBackground(R.drawable.keyboard_cofirm_btn_bg, paramCanvas, localKey);
-                drawText(paramCanvas, localKey, getResources().getDimension(R.dimen.fontsize36), -1, Typeface.DEFAULT);
+                if (this.mConFirmBtnEnabled) {
+                    drawKeyBackground(R.drawable.keyboard_cofirm_btn_bg, paramCanvas, localKey);
+                    drawText(paramCanvas, localKey, getResources().getDimension(R.dimen.fontsize36), -1, Typeface.DEFAULT);
+                }else {
+                    drawKeyBackground(R.drawable.keyboard_cofirm_btn_bg, paramCanvas, localKey);
+                    drawText(paramCanvas, localKey, getResources().getDimension(R.dimen.fontsize36), -7829368, Typeface.DEFAULT);
+                }
             }else if (localKey.codes[0] == -3){
                 // 绘制键盘图标
                 drawKeyBackground(R.drawable.keyboard_btn_normal_bg, paramCanvas, localKey);
@@ -120,5 +129,17 @@ public class CustomNumKeyboardView
                 drawText(paramCanvas, localKey, getResources().getDimension(R.dimen.fontsize36), R.color.color_red, Typeface.DEFAULT);
             }
         }
+    }
+
+    public boolean isConfirmBtnEnabled()
+    {
+        return this.mConFirmBtnEnabled;
+    }
+
+
+    public void setConfirmBtnEnabled(boolean paramBoolean)
+    {
+        this.mConFirmBtnEnabled = paramBoolean;
+        invalidate();
     }
 }

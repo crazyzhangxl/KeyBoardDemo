@@ -1,10 +1,12 @@
-package com.example.apple.keyboarddemo;
+package com.example.apple.keyboarddemo.keyboard_num;
 
 import android.content.Context;
 import android.inputmethodservice.Keyboard;
 import android.inputmethodservice.KeyboardView;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.EditText;
+
+import com.example.apple.keyboarddemo.R;
 
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
@@ -13,7 +15,7 @@ import java.lang.reflect.Method;
  * @author crazyZhangxl on 2018/10/18.
  * Describe:
  */
-public class KeyboardUtil {
+public class KeyboardNumUtil {
     private int keyboardLayout;
     private Context mContext;
     private EditText mEditText;
@@ -91,7 +93,7 @@ public class KeyboardUtil {
         }
     };
 
-    public KeyboardUtil(Context mContext,KeyboardView keyboardView){
+    public KeyboardNumUtil(Context mContext, KeyboardView keyboardView){
         this.mContext = mContext;
         this.mKeyboardView = keyboardView;
         this.mInputMethodManager = ((InputMethodManager)this.mContext.getSystemService(Context.INPUT_METHOD_SERVICE));

@@ -6,4 +6,10 @@
 
     <color name="white">#FFFFFF</color>
     <color name="color_red">#FF6A6E</color>
+
+    <color name="list_divider_color">#c8c7cc</color>
+
+    <color name="black">#000000</color>
+
+
 </resources>

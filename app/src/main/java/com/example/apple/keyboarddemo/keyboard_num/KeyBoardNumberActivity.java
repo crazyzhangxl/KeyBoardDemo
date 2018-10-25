@@ -1,30 +1,32 @@
-package com.example.apple.keyboarddemo;
+package com.example.apple.keyboarddemo.keyboard_num;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.example.apple.keyboarddemo.R;
+
 /**
  * @author crazyZhangxl on 2018-10-18 8:36:33.
  * Describe:
  */
 
-public class MainActivity extends AppCompatActivity implements KeyboardUtil.NumKeyboardListener {
+public class KeyBoardNumberActivity extends AppCompatActivity implements KeyboardNumUtil.NumKeyboardListener {
     private EditText mEditText;
     private CustomNumKeyboardView mCustomNumKeyboardView;
-    private KeyboardUtil mKeyboardUtil;
+    private KeyboardNumUtil mKeyboardNumUtil;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_keyboard_number);
 
         mEditText = findViewById(R.id.editText);
         mCustomNumKeyboardView = findViewById(R.id.keyboardView);
-        mKeyboardUtil = new KeyboardUtil(this,mCustomNumKeyboardView);
-        mKeyboardUtil.attachEditText(mEditText);
-        mKeyboardUtil.setNumKeyboardListener(this);
-        mKeyboardUtil.showNumKeyboard();
+        mKeyboardNumUtil = new KeyboardNumUtil(this,mCustomNumKeyboardView);
+        mKeyboardNumUtil.attachEditText(mEditText);
+        mKeyboardNumUtil.setNumKeyboardListener(this);
+        mKeyboardNumUtil.showNumKeyboard();
     }
 
     @Override
