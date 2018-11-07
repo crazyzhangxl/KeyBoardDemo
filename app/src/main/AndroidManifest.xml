@@ -9,11 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".keyboard_num.KeyBoardNumberActivity"
-            android:label="数字软键盘">
-
-        </activity>
-        <activity android:name=".SplashActivity"
+        <activity
+            android:name=".keyboard_num.KeyBoardNumberActivity"
+            android:label="数字软键盘"></activity>
+        <activity
+            android:name=".SplashActivity"
             android:label="软键盘项目">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -21,10 +21,13 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".topic.TopicActivity"
+        <activity
+            android:name=".topic.TopicActivity"
             android:label="话题"
-            android:theme="@style/topic"
-            android:windowSoftInputMode="adjustResize"/>
+            android:theme="@style/topic" />
+        <activity
+            android:name=".shelter_aty.ShelterActivity"
+            android:windowSoftInputMode="adjustPan"/>
     </application>
 
 </manifest>

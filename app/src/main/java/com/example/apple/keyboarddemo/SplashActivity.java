@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 
 import com.example.apple.keyboarddemo.keyboard_num.KeyBoardNumberActivity;
+import com.example.apple.keyboarddemo.shelter_aty.ShelterActivity;
 import com.example.apple.keyboarddemo.topic.TopicActivity;
 
 /**
@@ -30,6 +31,13 @@ public class SplashActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(SplashActivity.this, TopicActivity.class));
+            }
+        });
+
+        findViewById(R.id.btnShelter).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(SplashActivity.this, ShelterActivity.class));
             }
         });
     }

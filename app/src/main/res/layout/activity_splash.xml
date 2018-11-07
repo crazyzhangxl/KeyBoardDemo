@@ -16,5 +16,9 @@
         android:id="@+id/btnTopic"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
-
+    <Button
+        android:text="软键遮挡"
+        android:id="@+id/btnShelter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
 </LinearLayout>
