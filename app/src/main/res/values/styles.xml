@@ -13,6 +13,9 @@
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
     </style>
+    w
+    <style name="fullScreen" parent="topic">
+    </style>
 
     <style name="BottomSheetEdit" parent="Theme.Design.Light.BottomSheetDialog">
         <item name="android:windowIsFloating">false</item> <!--不浮现在活动上-->

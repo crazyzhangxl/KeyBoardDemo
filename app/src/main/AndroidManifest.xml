@@ -11,7 +11,7 @@
         android:theme="@style/AppTheme">
         <activity
             android:name=".keyboard_num.KeyBoardNumberActivity"
-            android:label="数字软键盘"></activity>
+            android:label="数字软键盘" />
         <activity
             android:name=".SplashActivity"
             android:label="软键盘项目">
@@ -27,7 +27,10 @@
             android:theme="@style/topic" />
         <activity
             android:name=".shelter_aty.ShelterActivity"
-            android:windowSoftInputMode="adjustPan"/>
+            android:windowSoftInputMode="adjustPan"
+            android:theme="@style/topic"/>
+        <activity android:name=".RegisterActivity"
+            android:theme="@style/fullScreen"/>
     </application>
 
 </manifest>

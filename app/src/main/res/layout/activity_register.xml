@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_splash"
+    android:fitsSystemWindows="true">
+    <LinearLayout
+        android:id="@+id/content"
+        android:fitsSystemWindows="true"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_marginTop="75dp"
+            android:layout_width="match_parent"
+            android:layout_height="110dp" >
+            <TextView
+                android:textColor="@color/white"
+                android:textSize="25sp"
+                android:text="加入我们,养殖无忧"
+                android:layout_marginLeft="45dp"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:layout_gravity="center_horizontal"
+                android:layout_marginRight="35dp"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:id="@+id/account"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:background="@drawable/bg_border_color_black"
+                >
+                <ImageView
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="15dp"
+                    android:src="@drawable/iconmbile"
+                    android:id="@+id/accountIcon" />
+
+                <EditText
+                    android:id="@+id/etAccount"
+                    android:layout_width="match_parent"
+                    android:textColor="@color/white"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:textColorHint="@color/white"
+                    android:hint="请输入您的手机号"
+                    android:textSize="13sp"
+                    android:background="@null"
+                    android:layout_marginRight="10dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@+id/accountIcon"
+                    tools:ignore="RtlCompat" />
+            </RelativeLayout>
+            <LinearLayout
+                android:layout_marginTop="28dp"
+                android:layout_marginRight="35dp"
+                android:layout_marginLeft="35dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <RelativeLayout
+                    android:id="@+id/rlRecode"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:background="@drawable/bg_border_color_black"
+                    >
+                    <ImageView
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_width="28dp"
+                        android:layout_height="28dp"
+                        android:layout_marginLeft="15dp"
+                        android:src="@mipmap/keyicon"
+                        android:id="@+id/keyIcon" />
+
+                    <EditText
+                        android:id="@+id/smsCode"
+                        android:layout_width="match_parent"
+                        android:textColor="@color/white"
+                        android:inputType="number"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:textColorHint="@color/white"
+                        android:hint="验证码"
+                        android:textSize="13sp"
+                        android:background="@null"
+                        android:layout_marginRight="20dp"
+                        android:layout_centerVertical="true"
+                        android:layout_toEndOf="@+id/keyIcon"
+                        tools:ignore="RtlCompat" />
+                </RelativeLayout>
+                <TextView
+                    android:background="@drawable/bg_border_color_black"
+                    android:text="发送验证码"
+                    android:id="@+id/pbSmsCode"
+                    android:textColor="@color/white"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="30dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:gravity="center"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginLeft="35dp"
+                android:layout_marginRight="35dp"
+                android:layout_marginTop="16dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <!-- checkbox-->
+                <CheckBox
+                    android:id="@+id/cbProtocol"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:button="@drawable/ic_selector_checkbox"
+                    android:contentDescription="@null"
+                    android:textSize="13sp"
+                    tools:visibility="visible" />
+
+                <TextView
+                    android:textSize="13sp"
+                    android:id="@+id/tvProtocol"
+                    android:text="我已阅读并接受《水产机器人用户注册协议》"
+                    android:textColor="@color/white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:ignore="HardcodedText,RtlHardcoded" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnNext"
+                android:layout_marginRight="35dp"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="15dp"
+                android:layout_gravity="center_horizontal"
+                android:text="下一步"
+                android:background="#31b968"
+                android:gravity="center"
+                android:textSize="15sp"
+                android:textColor="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="35dp" />
+        </LinearLayout>
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="45dp">
+        <ImageView
+            android:scaleType="centerInside"
+            android:visibility="visible"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/ivToolbarNavigation"
+            android:padding="8dp"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/ic_back2" />
+    </RelativeLayout>
+
+</FrameLayout>

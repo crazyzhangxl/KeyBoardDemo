@@ -4,7 +4,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:focusableInTouchMode="true"
+    android:focusable="true"
     tools:context=".shelter_aty.ShelterActivity">
+    <android.support.v7.widget.Toolbar
+        app:title="软键盘遮挡"
+        app:titleTextColor="@color/white"
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="45dp">
+    </android.support.v7.widget.Toolbar>
     <EditText
         android:paddingLeft="10dp"
         android:paddingTop="10dp"
