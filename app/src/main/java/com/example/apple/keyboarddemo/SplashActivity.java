@@ -47,5 +47,19 @@ public class SplashActivity extends AppCompatActivity {
                 startActivity(new Intent(SplashActivity.this,RegisterActivity.class));
             }
         });
+
+        findViewById(R.id.btnChat).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(SplashActivity.this,SessionActivity.class));
+            }
+        });
+
+        findViewById(R.id.btnRg2).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(SplashActivity.this,Register2Activity.class));
+            }
+        });
     }
 }

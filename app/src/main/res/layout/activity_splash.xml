@@ -6,14 +6,30 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".SplashActivity">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/btn"
+            android:text="键盘基础"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/btnRg2"
+            android:text="软件盘测试"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
     <Button
-        android:id="@+id/btn"
-        android:text="键盘基础"
+        android:id="@+id/btnChat"
+        android:text="聊天"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
     <Button
         android:id="@+id/btnNum"
-        android:text="数字软件"
+        android:text="数字软件盘"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
     <Button

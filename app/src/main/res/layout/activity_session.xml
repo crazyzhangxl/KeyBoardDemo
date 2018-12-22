@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SessionActivity">
+    <android.support.v7.widget.Toolbar
+        app:title="我是小可爱"
+        app:titleTextColor="@color/white"
+        android:layout_width="match_parent"
+        android:background="@color/colorPrimary"
+        android:layout_height="45dp">
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:id="@+id/llContent"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <!--
+          ************************
+          这里的ScrollView可以替换为 RecyclerView
+          主要是布局有滑动的属性 *******************
+          **************************
+        -->
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:fillViewport="true"
+            tools:ignore="NestedWeights">
+            <LinearLayout
+                android:background="@color/colorAccent"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </ScrollView>
+        <LinearLayout
+            android:id="@+id/ll_content_key"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/ivAudio"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_margin="5dp"
+                android:src="@mipmap/ic_cheat_voice"/>
+            <!-- ********** 文本内容 ******-->
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <EditText
+                    android:id="@+id/etContent"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/btnAudio"
+                    android:background="@null"
+                    android:drawableBottom="@drawable/selector_edit_focus"
+                    android:visibility="visible" />
+
+                <Button
+                    android:id="@+id/btnAudio"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/shape_session_btn_voice_normal"
+                    android:text="按住 说话"
+                    android:textColor="#7e7e7e"
+                    android:visibility="gone"/>
+
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/ivEmo"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_margin="5dp"
+                android:src="@mipmap/ic_cheat_emo"/>
+
+            <ImageView
+                android:id="@+id/ivMore"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="7dp"
+                android:src="@mipmap/ic_cheat_add"/>
+
+            <Button
+                android:id="@+id/btnSend"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="43dp"
+                android:layout_height="35dp"
+                android:layout_marginRight="4dp"
+                android:background="@drawable/shape_session_btn_send"
+                android:text="发送"
+                android:textColor="@color/white"
+                android:textSize="13sp"
+                android:visibility="gone"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

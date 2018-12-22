@@ -5,24 +5,39 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:focusableInTouchMode="true"
-    android:focusable="true"
     tools:context=".shelter_aty.ShelterActivity">
     <android.support.v7.widget.Toolbar
         app:title="软键盘遮挡"
+        android:id="@+id/toolbar"
         app:titleTextColor="@color/white"
         android:background="@color/colorPrimary"
         android:layout_width="match_parent"
         android:layout_height="45dp">
     </android.support.v7.widget.Toolbar>
-    <EditText
-        android:paddingLeft="10dp"
-        android:paddingTop="10dp"
-        android:layout_marginTop="300dp"
-        android:background="@drawable/bg_comment"
-        android:layout_marginLeft="50dp"
-        android:layout_marginRight="50dp"
-        android:gravity="left|top"
+    <ScrollView
+        android:fillViewport="true"
         android:layout_width="match_parent"
-        android:layout_height="100dp" />
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </LinearLayout>
+    </ScrollView>
+    <RelativeLayout
+        android:focusableInTouchMode="true"
+        android:focusable="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <!-- *********** 核心,设置居于底部,paddingBottom 保持一定的距离**********-->
+        <EditText
+            android:paddingBottom="10dp"
+            android:background="@drawable/bg_comment"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:gravity="left|top"
+            android:layout_width="match_parent"
+            android:layout_height="100dp" />
+    </RelativeLayout>
+
 </LinearLayout>

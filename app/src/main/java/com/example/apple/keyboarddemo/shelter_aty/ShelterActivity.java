@@ -2,6 +2,7 @@ package com.example.apple.keyboarddemo.shelter_aty;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.WindowManager;
 
 import com.example.apple.keyboarddemo.R;
 
@@ -15,6 +16,7 @@ public class ShelterActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_ALWAYS_HIDDEN);
         setContentView(R.layout.activity_shelter);
     }
 }
