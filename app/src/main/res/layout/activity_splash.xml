@@ -42,4 +42,30 @@
         android:id="@+id/btnShelter"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:text="比较下windowSoftInputMode 不设置-设置1-设置2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:text="头部顶出1"
+            android:id="@+id/btnTopMiss1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <Button
+            android:text="头部顶出2"
+            android:id="@+id/btnTopMiss2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <Button
+            android:text="头部顶出3"
+            android:id="@+id/btnTopMiss3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
 </LinearLayout>

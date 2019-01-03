@@ -33,10 +33,21 @@
             android:fillViewport="true"
             tools:ignore="NestedWeights">
             <LinearLayout
-                android:background="@color/colorAccent"
                 android:orientation="vertical"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent" />
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:background="#0f0"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp" />
+                <LinearLayout
+                    android:background="#f00"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp">
+            </LinearLayout>
+
+            </LinearLayout>
         </ScrollView>
         <LinearLayout
             android:id="@+id/ll_content_key"

@@ -38,8 +38,20 @@
             android:name=".SessionActivity"
             android:theme="@style/NextTheme"
             android:windowSoftInputMode="stateHidden|adjustPan" />
-        <activity android:name=".Register2Activity"
+        <activity
+            android:name=".Register2Activity"
             android:theme="@style/NextTheme"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".top_dismiss.TopDismissFirstActivity"
+            android:theme="@style/topic" />
+        <activity
+            android:name=".top_dismiss.TopDismissSecondActivity"
+            android:theme="@style/topic"
+            android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity
+            android:name=".top_dismiss.TopDismissThirdActivity"
+            android:theme="@style/topic"
             android:windowSoftInputMode="stateHidden|adjustPan" />
     </application>
 

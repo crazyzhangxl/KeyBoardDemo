@@ -10,6 +10,13 @@
     <color name="list_divider_color">#c8c7cc</color>
 
     <color name="black">#000000</color>
-
+    <color name="gray">#FFF0F0F0</color>
+    <color name="gray0">#464646</color>
+    <color name="gray1">#7e7e7e</color>
+    <color name="gray2">#969696</color>
+    <color name="gray3">#c8969696</color>
+    <color name="gray4">#F5F5F5</color> // dark_background
+    <color name="green1">#45C01A</color>
+    <color name="color_add_line">#fff0f2f5</color>
 
 </resources>

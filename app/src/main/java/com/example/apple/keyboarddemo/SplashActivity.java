@@ -7,6 +7,9 @@ import android.view.View;
 
 import com.example.apple.keyboarddemo.keyboard_num.KeyBoardNumberActivity;
 import com.example.apple.keyboarddemo.shelter_aty.ShelterActivity;
+import com.example.apple.keyboarddemo.top_dismiss.TopDismissFirstActivity;
+import com.example.apple.keyboarddemo.top_dismiss.TopDismissSecondActivity;
+import com.example.apple.keyboarddemo.top_dismiss.TopDismissThirdActivity;
 import com.example.apple.keyboarddemo.topic.TopicActivity;
 
 /**
@@ -59,6 +62,26 @@ public class SplashActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(SplashActivity.this,Register2Activity.class));
+            }
+        });
+
+        findViewById(R.id.btnTopMiss1).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(SplashActivity.this, TopDismissFirstActivity.class));
+            }
+        });
+
+        findViewById(R.id.btnTopMiss2).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(SplashActivity.this, TopDismissSecondActivity.class));
+            }
+        });
+        findViewById(R.id.btnTopMiss3).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(SplashActivity.this, TopDismissThirdActivity.class));
             }
         });
     }
