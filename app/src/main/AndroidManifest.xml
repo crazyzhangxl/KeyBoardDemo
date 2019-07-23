@@ -11,6 +11,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:replace="label,allowBackup,theme">
+        <activity android:name=".focus.SoftFocusActivity"></activity>
         <activity
             android:name=".keyboard_num.KeyBoardNumberActivity"
             android:label="数字软键盘" />
@@ -48,7 +49,7 @@
         <activity
             android:name=".top_dismiss.TopDismissSecondActivity"
             android:theme="@style/topic"
-            android:windowSoftInputMode="adjustResize|stateHidden"/>
+            android:windowSoftInputMode="adjustResize|stateHidden" />
         <activity
             android:name=".top_dismiss.TopDismissThirdActivity"
             android:theme="@style/topic"

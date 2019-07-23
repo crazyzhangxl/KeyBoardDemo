@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
+import com.example.apple.keyboarddemo.focus.SoftFocusActivity;
 import com.example.apple.keyboarddemo.keyboard_num.KeyBoardNumberActivity;
 import com.example.apple.keyboarddemo.shelter_aty.ShelterActivity;
 import com.example.apple.keyboarddemo.top_dismiss.TopDismissFirstActivity;
@@ -82,6 +83,13 @@ public class SplashActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(SplashActivity.this, TopDismissThirdActivity.class));
+            }
+        });
+
+        findViewById(R.id.focus).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(SplashActivity.this, SoftFocusActivity.class));
             }
         });
     }
