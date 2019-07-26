@@ -12,6 +12,7 @@
 </div>
 <br><br>
 &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;
+
 ## 3. 折叠TextView以及折叠Layout展示
 &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;
 <div style="align:center">
@@ -21,4 +22,5 @@
 <div style="align:center">
 <img src="https://github.com/crazyzhangxl/KeyBoardDemo/blob/master/app/screenshoots/collapse.gif"/>
 </div>
+
 ## 4. [博客地址](https://blog.csdn.net/crazyZhangxl/article/details/83141724)
