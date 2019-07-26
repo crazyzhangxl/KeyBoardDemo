@@ -11,7 +11,10 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:replace="label,allowBackup,theme">
-        <activity android:name=".focus.SoftFocusActivity"></activity>
+        <activity android:name=".collapse.CollapseActivity" android:label="折叠View"></activity>
+        <activity
+            android:name=".focus.SoftFocusActivity"
+            android:label="可折叠TextView" />
         <activity
             android:name=".keyboard_num.KeyBoardNumberActivity"
             android:label="数字软键盘" />

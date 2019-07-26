@@ -4,11 +4,16 @@ import android.content.Context;
 import android.os.IBinder;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.Gravity;
 import android.view.View;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.EditText;
+import android.widget.LinearLayout;
 
 import com.example.apple.keyboarddemo.R;
+import com.example.apple.keyboarddemo.RedDotView;
+import com.example.apple.keyboarddemo.expand.ExpandTextView;
+import com.ycbjie.ycreddotviewlib.YCRedDotView;
 
 /**
  * created by apple on 2019/7/23
@@ -18,6 +23,9 @@ import com.example.apple.keyboarddemo.R;
 public class SoftFocusActivity extends AppCompatActivity {
     private View mRootView;
     private EditText mEtSend,mEtTheme;
+    private ExpandTextView mExpandTextView;
+    private LinearLayout mLinear;
+    private RedDotView mRedDotView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -32,6 +40,10 @@ public class SoftFocusActivity extends AppCompatActivity {
         mRootView = findViewById(R.id.llRoot);
         mEtSend = findViewById(R.id.etSend);
         mEtTheme = findViewById(R.id.etTheme);
+        mExpandTextView = findViewById(R.id.expandTextView);
+        mLinear = findViewById(R.id.linear);
+        mRedDotView = findViewById(R.id.redDot);
+        mRedDotView.setBadgeCount(0);
     }
 
 
@@ -52,6 +64,11 @@ public class SoftFocusActivity extends AppCompatActivity {
     private void initData() {
         mEtSend.requestFocus();
         mEtSend.setSelection(mEtSend.getText().toString().length());
+        mExpandTextView.setText("我是谁我是谁我是谁我是谁我是谁我是谁我是谁我是谁我是谁我是谁我是谁我是谁我是谁我是谁我是谁我是谁我是谁我是谁我是谁我是谁我是谁我是谁我是谁我是谁我是谁我是谁我是谁我是谁我是谁我是谁我是谁我是谁我是谁");
+    }
+
+    private void initRedDot(){
+
     }
 
 
